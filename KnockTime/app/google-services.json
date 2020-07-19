@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "788597781942",
+    "firebase_url": "https://knock-time.firebaseio.com",
+    "project_id": "knock-time",
+    "storage_bucket": "knock-time.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788597781942:android:a79433613119225e87bd17",
+        "android_client_info": {
+          "package_name": "com.example.knocktime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788597781942-8tle2eeo56doo9cqqtifoq98dhv4sbcc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYx_pDnqgUyOwBd9duqRWn-aahrF6m37E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788597781942-8tle2eeo56doo9cqqtifoq98dhv4sbcc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

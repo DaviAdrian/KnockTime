@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".addtask">
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="casual"
+            android:text="Create Task"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bgcancel"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgcancel"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgcancel"/>
+    </LinearLayout>
+    <View
+        app:layout_constraintTop_toBottomOf="@id/topPanel"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp" />
+
+    <ScrollView
+        android:layout_marginTop="-60dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/isi"
+        app:layout_constraintTop_toBottomOf="@id/topPanel">
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bginput3"
+            android:orientation="vertical"
+            android:paddingBottom="22dp"
+            android:paddingTop="22dp">
+
+            <LinearLayout
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="casual"
+                    android:text="Judul Task"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/maintitle"
+                    android:inputType="text"
+                    android:background="@drawable/bginput"
+                    android:paddingLeft="12dp"
+                    android:textColorHint="#B5B5B5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:hint="What you are gonna do?"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/adddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="casual"
+                    android:text="Date"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/maindate"
+                    android:inputType="text"
+                    android:background="@drawable/bginput"
+                    android:paddingLeft="12dp"
+                    android:textColorHint="#B5B5B5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:hint="Select Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="casual"
+                    android:text="Time"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/maintime"
+                    android:inputType="text"
+                    android:background="@drawable/bginput"
+                    android:paddingLeft="12dp"
+                    android:textColorHint="#B5B5B5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:hint="Select Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnsave"
+        app:layout_constraintTop_toBottomOf="@id/isi"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bgcreate"
+        android:fontFamily="cursive"
+        android:text="Save task"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/btnsave"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bgcreate"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

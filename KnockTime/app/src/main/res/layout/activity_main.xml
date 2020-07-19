@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="Knock"
+                    android:textStyle="bold"
+                    android:textColor="#B1B7F3"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/subjudul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/allura"
+                    android:text="Just do it"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+
+            </LinearLayout>
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnadd"-->
+            <!--                android:layout_width="70dp"-->
+            <!--                android:layout_height="70dp"-->
+            <!--                android:layout_marginLeft="100dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:text="+"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textColor="#FFF"-->
+            <!--                android:textSize="38sp" />-->
+            <TextView
+                android:id="@+id/judul2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Time"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFF"
+                android:textSize="40sp" />
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:background="#939393"
+            android:layout_height="6dp" />
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="#939393"
+            android:layout_height="3dp" />
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+
+    <!-- <android.support.v7.widget.RecyclerView
+         android:id="@+id/daftar"
+         android:layout_width="match_parent"
+         android:layout_marginTop="-20dp"
+         android:layout_marginRight="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_height="wrap_content">
+
+     </android.support.v7.widget.RecyclerView>-->
+
+    <Button
+        android:id="@+id/btnadd"
+        app:layout_constraintTop_toBottomOf="@id/topPanel"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="50dp"
+        android:text="+"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textColor="@color/colorgray"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/end"
+        app:layout_constraintTop_toBottomOf="@id/btnadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/allura"
+        android:text="Nothing else..."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
